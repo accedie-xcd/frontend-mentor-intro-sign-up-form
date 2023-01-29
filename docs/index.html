@@ -20,44 +20,81 @@
       </p>
     </header>
 
-    <div
-      class="offer bg-purple-700 h-28 text-2xl text-center flex justify-center flex-col rounded-xl drop-shadow-xl shadow-lg shadow-gray-900 my-16"
-    >
-      <span class="font-bold">Try it free 7 days</span> then $20/mo. thereafter
-    </div>
+    <main>
+      <div
+        class="offer bg-purple-700 h-28 text-2xl text-center flex justify-center flex-col rounded-xl drop-shadow-xl shadow-lg shadow-gray-900 my-16"
+      >
+        <span class="font-bold">Try it free 7 days</span> then $20/mo.
+        thereafter
+      </div>
 
-    <form action="" class="w-full bg-white p-10 rounded-xl mx-auto">
-      <input
-        type="text"
-        placeholder="First Name"
-        class="border h-16 w-full placeholder:font-bold placeholder:text-slate-600 text-slate-600 px-5 text-lg mb-4 rounded-lg"
-      />
-      <input
-        type="text"
-        placeholder="Last Name"
-        class="border h-16 w-full placeholder:font-bold placeholder:text-slate-600 text-slate-600 px-5 text-lg mb-4 rounded-lg"
-      />
-      <input
-        type="text"
-        placeholder="Email Address"
-        class="border h-16 w-full placeholder:font-bold placeholder:text-slate-600 text-slate-600 px-5 text-lg mb-4 rounded-lg"
-      />
-      <input
-        type="text"
-        placeholder="Password"
-        class="border h-16 w-full placeholder:font-bold placeholder:text-slate-600 text-slate-600 px-5 text-lg mb-4 rounded-lg"
-      />
-      <input
-        type="submit"
-        placeholder="asd"
-        value="CLAIM YOUR FREE TRIAL"
-        class="bg-green-500 w-full text-white font-semibold h-16 rounded-lg shadow-black shadow-sm text-2xl mb-4"
-      />
-      <p class="text-slate-400 text-center">
-        By clicking the button, you are agreeing to our
-        <a href="#" class="text-orange-600">Terms and Services</a>
-      </p>
-    </form>
+      <form
+        action=""
+        class="w-full bg-white p-10 rounded-xl mx-auto"
+        name="form"
+      >
+        <div class="mb-4">
+          <input
+            name="fName"
+            id="fName"
+            type="text"
+            placeholder="First Name"
+            required
+            class="border h-16 w-full placeholder:font-bold placeholder:text-slate-600 text-slate-600 px-5 text-lg rounded-lg"
+          />
+          <p id="fName-help" class="hidden text-red-600">cannot be empty</p>
+        </div>
+
+        <div class="mb-4">
+          <input
+            name=""
+            id="lNAme"
+            type="text"
+            placeholder="Last Name"
+            required
+            class="border h-16 w-full placeholder:font-bold placeholder:text-slate-600 text-slate-600 px-5 text-lg rounded-lg"
+          />
+          <p id="lName-help" class="hidden text-red-600">cannot be empty</p>
+        </div>
+
+        <div class="mb-4">
+          <input
+            name=""
+            id="email"
+            type="text"
+            placeholder="Email Address"
+            required
+            class="border h-16 w-full placeholder:font-bold placeholder:text-slate-600 text-slate-600 px-5 text-lg mb-4 rounded-lg"
+          />
+          <p id="email-help" class="hidden text-red-600">invalid email</p>
+        </div>
+
+        <div class="mb-4">
+          <input
+            name=""
+            id="password"
+            type="text"
+            placeholder="Password"
+            required
+            class="border h-16 w-full placeholder:font-bold placeholder:text-slate-600 text-slate-600 px-5 text-lg mb-4 rounded-lg"
+          />
+          <p id="password-help" class="hidden text-red-600">cannot be empty</p>
+        </div>
+
+        <input
+          name=""
+          id="submit"
+          type="submit"
+          onsubmit="return validate()"
+          value="CLAIM YOUR FREE TRIAL"
+          class="bg-green-500 w-full text-white font-semibold h-16 rounded-lg shadow-black shadow-sm text-2xl mb-4 hover:opacity-60"
+        />
+        <p class="text-slate-400 text-center">
+          By clicking the button, you are agreeing to our
+          <a href="#" class="text-orange-600">Terms and Services</a>
+        </p>
+      </form>
+    </main>
 
     <script src="scripts.js"></script>
   </body>
