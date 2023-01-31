@@ -1,5 +1,3 @@
-
-
 function validate() {
   alert("asd");
   let fName = document.getElementById("fName").value;
@@ -23,4 +21,11 @@ function validate() {
     document.getElementById("password-help").classList.remove("hidden");
   }
 
+  return true;
 }
+
+const form = document.getElementById("form");
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  alert("asd");
+});

@@ -28,7 +28,13 @@
         thereafter
       </div>
 
-      <form class="w-full bg-white p-10 rounded-xl mx-auto" name="form">
+      <form
+        id="form"
+        class="w-full bg-white p-10 rounded-xl mx-auto"
+        name="form"
+        action="#"
+        onsubmit="return validate();"
+      >
         <div class="mb-4">
           <input
             name="fName"
@@ -80,7 +86,6 @@
           name="submit"
           id="submit"
           type="submit"
-          onsubmit="return alert('asd');"
           value="CLAIM YOUR FREE TRIAL"
           class="bg-green-500 w-full text-white font-semibold h-16 rounded-lg shadow-black shadow-sm text-2xl mb-4 hover:opacity-60"
         />
