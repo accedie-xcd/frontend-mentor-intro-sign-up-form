@@ -22,12 +22,13 @@
 
     <main>
       <div
-        class="offer bg-purple-700 h-28 text-2xl text-center flex justify-center flex-col rounded-xl drop-shadow-xl shadow-lg shadow-gray-900 my-16"
+        class="bg-purple-700 h-28 text-2xl text-center flex justify-center flex-col rounded-xl drop-shadow-xl shadow-lg shadow-gray-900 my-16"
       >
         <span class="font-bold">Try it free 7 days</span> then $20/mo.
         thereafter
       </div>
 
+      <!-- Start forms -->
       <form
         id="form"
         class="w-full bg-white p-10 rounded-xl mx-auto"
@@ -35,20 +36,21 @@
         action="#"
         onsubmit="return validate();"
       >
+      <!-- first name -->
         <div class="mb-4">
           <input
-            name="fName"
             id="fName"
+            required
             type="text"
             placeholder="First Name"
             class="border h-16 w-full placeholder:font-bold placeholder:text-slate-600 text-slate-600 px-5 text-lg rounded-lg"
           />
           <p id="fName-help" class="hidden text-red-600">cannot be empty</p>
         </div>
-
+        <!-- end first name -->
+        <!-- last name -->
         <div class="mb-4">
           <input
-            name=""
             id="lNAme"
             type="text"
             placeholder="Last Name"
@@ -57,10 +59,10 @@
           />
           <p id="lName-help" class="hidden text-red-600">cannot be empty</p>
         </div>
-
+        <!-- end last name -->
+        <!-- email -->
         <div class="mb-4">
           <input
-            name=""
             id="email"
             type="text"
             placeholder="Email Address"
@@ -69,10 +71,10 @@
           />
           <p id="email-help" class="hidden text-red-600">invalid email</p>
         </div>
-
+        <!-- end email -->
+        <!-- password -->
         <div class="mb-4">
           <input
-            name=""
             id="password"
             type="text"
             placeholder="Password"
@@ -81,9 +83,9 @@
           />
           <p id="password-help" class="hidden text-red-600">cannot be empty</p>
         </div>
-
+        <!-- end password -->
+        <!-- submit button -->
         <input
-          name="submit"
           id="submit"
           type="submit"
           value="CLAIM YOUR FREE TRIAL"
@@ -93,7 +95,9 @@
           By clicking the button, you are agreeing to our
           <a href="#" class="text-orange-600">Terms and Services</a>
         </p>
+        <!-- end submit button -->
       </form>
+      <!-- end form -->
     </main>
 
     <script src="scripts.js"></script>
