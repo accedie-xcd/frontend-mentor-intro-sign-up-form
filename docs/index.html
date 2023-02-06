@@ -7,28 +7,98 @@
     <title>Frontend mentor intro sign up form</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="bg-red-400 text-white mx-12">
-    <header>
-      <h1 class="text-5xl font-bold mt-10 text-center">
-        Learn to code by watching others
-      </h1>
+  <body
+    class="bg-red-400 text-white mx-12 lg:h-screen lg:grid lg:place-content-center"
+  >
+    <main class="lg:grid lg:grid-flow-col lg:grid-cols-2 lg:gap-8">
+      <div class="">
+        <header>
+          <h1 class="text-5xl font-bold mt-10 text-center">
+            Learn to code by watching others
+          </h1>
 
-      <p class="description font-semibold text-2xl my-12 text-center">
-        See how experienced developers solve problems in real-time. Watching
-        scripted tutorials is great, but understanding how developers think is
-        invaluable.
-      </p>
-    </header>
+          <p class="description font-semibold text-2xl my-12 text-center">
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </header>
 
-    <main>
-      <div
-        class="bg-purple-700 h-28 text-2xl text-center flex justify-center flex-col rounded-xl drop-shadow-xl shadow-lg shadow-gray-900 my-16"
-      >
-        <span class="font-bold">Try it free 7 days</span> then $20/mo.
-        thereafter
+        <div
+          class="bg-purple-700 h-28 text-2xl text-center flex justify-center flex-col rounded-xl drop-shadow-xl shadow-lg shadow-gray-900 my-16"
+        >
+          <span class="font-bold">Try it free 7 days</span> then $20/mo.
+          thereafter
+        </div>
       </div>
 
-      
+      <div class="forms bg-white text-xl py-5 rounded-lg">
+        <form action="#" onsubmit="return validate()" class="w-full">
+          <!-- first name -->
+          <div id="fName-block" class="my-6 w-10/12 mx-auto">
+            <input
+              type="text"
+              placeholder="first name"
+              id="fName"
+              class="border border-slate-400 w-full min-h-[50px] p-2 rounded-md text-slate-600 block"
+            />
+            <p id="fName-help" class="text-red-600 text-right hidden">
+              Cannot be empty
+            </p>
+            <!-- end first name -->
+          </div>
+          <!-- last name -->
+          <div id="lName-block" class="my-6 w-10/12 mx-auto">
+            <input
+              type="text"
+              placeholder="last name"
+              id="lName"
+              class="border border-slate-400 w-full min-h-[50px] p-2 rounded-md text-slate-600 block"
+            />
+            <p id="lName-help" class="text-red-600 text-right hidden">
+              Cannot be empty
+            </p>
+            <!-- end last name -->
+          </div>
+          <!-- email -->
+          <div id="email-block" class="my-6 w-10/12 mx-auto">
+            <input
+              type="text"
+              placeholder="email@example.domain"
+              id="email"
+              class="border border-slate-400 w-full min-h-[50px] p-2 rounded-md text-slate-600 block"
+            />
+            <p id="email-help" class="text-red-600 text-right hidden">
+              enter a valid email
+            </p>
+            <!-- end email -->
+          </div>
+          <!-- password -->
+          <div id="password-block" class="my-6 w-10/12 mx-auto">
+            <input
+              type="text"
+              placeholder="password"
+              id="password"
+              class="border border-slate-400 w-full min-h-[50px] p-2 rounded-md text-slate-600 block"
+            />
+            <p id="password-help" class="text-red-600 text-right hidden">
+              Cannot be empty
+            </p>
+            <!-- end password -->
+          </div>
+
+          <input
+            type="submit"
+            value="CLAIM YOUR FREE TRIAL"
+            class="bg-green-600 block mx-auto w-6/12 min-h-[70px] rounded-xl font-bold text-xl"
+          />
+        </form>
+
+        <p class="text-slate-400 p-6">
+          By clicking the button, you are agreeing to our
+          <a href="#" class="text-red-400"> Terms and Services</a>
+        </p>
+      </div>
     </main>
 
     <script src="scripts.js"></script>
